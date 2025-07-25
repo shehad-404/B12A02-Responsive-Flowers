@@ -9,8 +9,10 @@ body {
   
   /* Navbar */
   .navbar {
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  }
+    width: 90% !important;
+    margin: auto;
+    box-shadow: 0;
+}
   
   .logo img:hover{
     transform: scale(1.05);
@@ -22,7 +24,7 @@ body {
   }
   
   .nav-link {
-    color: #000;
+    color: #8987A1;
     font-weight: 500;
   }
   
@@ -62,8 +64,24 @@ body {
     gap: 2rem;
   }
 
+  /* add effect  */
   .banner-text {
     margin-bottom: -137px !important;
+  }
+  .var-effect {
+    position: relative;
+    padding-left: 20px; 
+  }
+  .banner:hover .var-effect::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -50px;
+    width: 2px;
+    height: 20%;
+    background-color: rgba(213, 41, 41, 0.8);
+    z-index: -1;
+    border-radius: 10px;
   }
   
   .banner-text h1 {
@@ -94,6 +112,29 @@ body {
     color: #e03e2f;
   }
 
+
+/* add effect  */
+.line-effect {
+    display: block;
+    /* width: 140px;
+    height: 1px;
+    background: transparent; */
+    position: relative;
+    margin: auto;
+}
+.plants:hover .line-effect::before{
+    content: '';
+    height: 2px;
+    width: 50px;
+    right: 50%;
+    margin: auto;
+    align-items: center;
+    position: absolute;
+    background: #e59205;
+    transition: .4s all ease-in-out;
+    z-index: -1;
+}
+
   .plants .plant-p {
     width: 60%;
     font-size: 1.25rem;
@@ -105,6 +146,19 @@ body {
   .cards{
     margin-top: 20px;
   }
+
+  /* add effect  */
+  /* .cards:hover .var-effect::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -50px;
+    width: 2px;
+    height: 20%;
+    background-color: rgba(213, 41, 41, 0.8);
+    z-index: -1;
+    border-radius: 10px;
+  } */
 
   .cards .btn{
     width: 100%;
@@ -179,7 +233,7 @@ body {
   }
   
   .join-section h2 {
-    color: #000;
+    color: #fff;
     font-weight: 700;
     margin-top: 60px;
   }
@@ -191,8 +245,9 @@ body {
   
   .join-section input.form-control {
     max-width: 350px;
-    border: 2px solid #000;
-    border-radius: 5px;
+    /* border: 2px solid #000; */
+    border-radius: 0 !important;
+    width: 100% !important;
   }
   
   .join-section input.form-control:focus {
@@ -203,18 +258,48 @@ body {
   .join-section button {
     padding: 10px 25px;
     font-weight: 600;
-    background-color: #2f7a46;
+    background-color: #E95A08;
     border: none;
+    border-radius: 0 !important;
+    width: 150px;
   }
   
   .join-section button:hover {
     background-color: #1f4b29;
   }
   
+  
+  
   /* Footer */
-  footer {
-    font-size: 0.9rem;
+  .footer p{
+    color: #000000;
   }
+  .footer-link {
+    color: gray;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 8px;
+    transition: color 0.2s ease;
+  }
+  
+  .footer-link:hover {
+    color: #000000;
+  }
+  
+  /* .social-icon {
+    color: #ccc;
+    font-size: 20px;
+    transition: color 0.3s ease;
+  } */
+  
+  .social-icon:hover {
+    color: #ffffff;
+  }
+  
+  .footer img {
+    max-width: 60px;
+  }
+  
   
   /* Responsive adjustments */
   @media (max-width: 767.98px) {
