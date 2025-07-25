@@ -9,9 +9,11 @@ body {
   
   /* Navbar */
   .navbar {
-    width: 90% !important;
-    margin: auto;
-    box-shadow: 0;
+    display: flex;
+        justify-content: space-between;
+        width: 90% !important;
+        margin: auto;
+        box-shadow: 0;
 }
   
   .logo img:hover{
@@ -350,11 +352,10 @@ body {
   
   
   /* Responsive adjustments */
-  @media (max-width: 576) {
-    .banner {
-      /* flex-direction: column; */
+  @media (max-width <=576) {
+    .banner-text {
+      /* text-align: left !important; */
     }
-  
     .banner-image img {
       max-width: 100%;
     }
