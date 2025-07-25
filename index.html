@@ -1,147 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Responsive-Flowers</title>
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="styles.css" />
-  <link
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    rel="stylesheet"
-  />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Responsive-Flowers</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light px-3">
-    <a class="navbar-brand fw-bold" href="#"><img src="assets/logo.png" class="w-75" alt=""></a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarMenu"
-      aria-controls="navbarMenu"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light px-3">
+        <a class="logo navbar-brand fw-bold" href="#"><img src="assets/logo.png" class="w-75" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+            aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <div class="collapse navbar-collapse justify-content-end" id="navbarMenu">
-      <ul class="navbar-nav align-items-center">
-        <li class="nav-item mx-2"><a class="nav-link" href="#">Home</a></li>
-        <li class="nav-item mx-2"><a class="nav-link" href="#">Shop</a></li>
-        <li class="nav-item mx-2"><a class="nav-link" href="#">About us</a></li>
-        <li class="nav-item mx-2 position-relative">
-          <a class="nav-link cart-link" href="#">
-            <i class="fa fa-shopping-cart"></i> Cart
-            <span class="cart-count">($56)</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarMenu">
+            <ul class="navbar-nav align-items-center">
+                <li class="nav-item mx-2"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item mx-2"><a class="nav-link" href="#">Shop</a></li>
+                <li class="nav-item mx-2"><a class="nav-link" href="#">About us</a></li>
+                <li class="nav-item mx-2 position-relative">
+                    <a class="nav-link cart-link" href="#">
+                        <i class="fa fa-shopping-cart"></i> Cart
+                        <span class="cart-count">($56)</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-  <!-- Banner Section -->
-  <section class="banner d-flex flex-column flex-lg-row align-items-center text-center text-lg-start p-4 p-lg-5">
-    <div class="banner-text flex-grow-1">
-      <h1>Welcome to Responsive-Flowers</h1>
-      <p class="lead">
-        Explore our beautiful collection of plants to brighten your home and heart.
-      </p>
-      <button class="btn btn-success btn-lg mt-3">Shop Now</button>
-    </div>
-    <div class="banner-image flex-shrink-0">
-      <img
-        src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=500&q=80"
-        alt="Flower Banner"
-        class="img-fluid rounded"
-      />
-    </div>
-  </section>
+    <!-- Banner Section -->
+    <section class="banner d-flex flex-column  flex-lg-row align-items-center text-center text-lg-start p-4 p-lg-5">
+        <div class="banner-text flex-grow-1">
+            <h1>Always <span>Fresh <br> Flowers</span></h1>
+            <p class="lead">
+                Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic
+                blooms, we offer a wide variety of fresh flowers that are perfect for any occasion.
+            </p>
+            <!-- <button class="btn btn-success btn-lg mt-3">Shop Now</button> -->
+        </div>
+        <div class="banner-image flex-shrink-0">
+            <img src="assets/hero-flower.png" alt="Flower Banner" class="img-fluid rounded" />
+        </div>
+    </section>
 
-  <!-- Plants Section -->
-  <section class="plants py-5 px-3 px-lg-5">
-    <h2 class="section-title mb-4 text-center">Our Plants</h2>
-    <div class="row g-4 justify-content-center">
-      <div class="col-6 col-md-4 col-lg-3 plant-card">
-        <img src="https://images.unsplash.com/photo-1516728778615-2d590ea1856f?auto=format&fit=crop&w=400&q=80" alt="Plant 1" class="img-fluid rounded" />
-        <h5 class="mt-2 text-center">Aloe Vera</h5>
-      </div>
-      <div class="col-6 col-md-4 col-lg-3 plant-card">
-        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Plant 2" class="img-fluid rounded" />
-        <h5 class="mt-2 text-center">Succulent</h5>
-      </div>
-      <div class="col-6 col-md-4 col-lg-3 plant-card">
-        <img src="https://images.unsplash.com/photo-1465188035480-1f6a6643eaa5?auto=format&fit=crop&w=400&q=80" alt="Plant 3" class="img-fluid rounded" />
-        <h5 class="mt-2 text-center">Monstera</h5>
-      </div>
-      <div class="col-6 col-md-4 col-lg-3 plant-card">
-        <img src="https://images.unsplash.com/photo-1504198453319-5ce911bafcde?auto=format&fit=crop&w=400&q=80" alt="Plant 4" class="img-fluid rounded" />
-        <h5 class="mt-2 text-center">Fern</h5>
-      </div>
-    </div>
-  </section>
+    <!-- Plants Section -->
+    <section class="plants py-5 px-3 px-lg-5">
+        <h2 class="section-title mb-4 text-center"> <span>Our</span> Plants</h2>
+        <p class="plant-p">
+            Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic
+            blooms, we offer a wide variety of fresh.
+        </p>
 
-  <!-- Plants Lover Section -->
-  <section class="plants-lover bg-light py-5 px-3 px-lg-5">
-    <h2 class="section-title mb-4 text-center">Plants Lover</h2>
-    <div class="row g-4 justify-content-center">
-      <div class="col-12 col-md-6 col-lg-4 text-center">
-        <img
-          src="https://images.unsplash.com/photo-1544457353-c1fbc7d7f6a2?auto=format&fit=crop&w=300&q=80"
-          alt="Lover 1"
-          class="img-fluid rounded-circle mb-3"
-        />
-        <h5>Jane Doe</h5>
-        <p>“I can't live without my plants — they bring life and joy!”</p>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4 text-center">
-        <img
-          src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=300&q=80"
-          alt="Lover 2"
-          class="img-fluid rounded-circle mb-3"
-        />
-        <h5>John Smith</h5>
-        <p>“Growing plants is my therapy.”</p>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4 text-center">
-        <img
-          src="https://images.unsplash.com/photo-1508214751198-9e6b2e98244f?auto=format&fit=crop&w=300&q=80"
-          alt="Lover 3"
-          class="img-fluid rounded-circle mb-3"
-        />
-        <h5>Mary Johnson</h5>
-        <p>“Every leaf is a little miracle.”</p>
-      </div>
-    </div>
-  </section>
+        <div class="cards row g-4 justify-content-center">
+            <div class="col-6 col-md-4 col-lg-3 plant-card">
+                <img src="assets/sample-flower-image.png" alt="Plant 1" class="img-fluid rounded" />
+                <h5 class="mt-2 text-center">Lily Blossom</h5>
+                <h4 class="mt-2 text-center">20 USD</h4>
+                <button class="btn btn-success btn-lg mt-3">ADD TO CART</button>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 plant-card">
+                <img src="assets/sample-flower-image.png" alt="Plant 2" class="img-fluid rounded" />
+                <h5 class="mt-2 text-center">Lily Blossom</h5>
+                <h4 class="mt-2 text-center">20 USD</h4>
+                <button class="btn btn-success btn-lg mt-3">ADD TO CART</button>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 plant-card">
+                <img src="assets/sample-flower-image.png" alt="Plant 3" class="img-fluid rounded" />
+                <h5 class="mt-2 text-center">Lily Blossom</h5>
+                <h4 class="mt-2 text-center">20 USD</h4>
+                <button class="btn btn-success btn-lg mt-3">ADD TO CART</button>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 plant-card">
+                <img src="assets/sample-flower-image.png" alt="Plant 4" class="img-fluid rounded" />
+                <h5 class="mt-2 text-center">Lily Blossom</h5>
+                <h4 class="mt-2 text-center">20 USD</h4>
+                <button class="btn btn-success btn-lg mt-3">ADD TO CART</button>
+            </div>
+        </div>
+        <div class="cards row g-4 justify-content-center">
+            <div class="col-6 col-md-4 col-lg-3 plant-card">
+                <img src="assets/sample-flower-image.png" alt="Plant 1" class="img-fluid rounded" />
+                <h5 class="mt-2 text-center">Lily Blossom</h5>
+                <h4 class="mt-2 text-center">20 USD</h4>
+                <button class="btn btn-success btn-lg mt-3">ADD TO CART</button>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 plant-card">
+                <img src="assets/sample-flower-image.png" alt="Plant 2" class="img-fluid rounded" />
+                <h5 class="mt-2 text-center">Lily Blossom</h5>
+                <h4 class="mt-2 text-center">20 USD</h4>
+                <button class="btn btn-success btn-lg mt-3">ADD TO CART</button>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 plant-card">
+                <img src="assets/sample-flower-image.png" alt="Plant 3" class="img-fluid rounded" />
+                <h5 class="mt-2 text-center">Lily Blossom</h5>
+                <h4 class="mt-2 text-center">20 USD</h4>
+                <button class="btn btn-success btn-lg mt-3">ADD TO CART</button>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 plant-card">
+                <img src="assets/sample-flower-image.png" alt="Plant 4" class="img-fluid rounded" />
+                <h5 class="mt-2 text-center">Lily Blossom</h5>
+                <h4 class="mt-2 text-center">20 USD</h4>
+                <button class="btn btn-success btn-lg mt-3">ADD TO CART</button>
+            </div>
+        </div>
+    </section>
 
-  <!-- Join Section -->
-  <section class="join-section text-center py-5">
-    <h2 class="mb-3">Join Our Plant Community</h2>
-    <p class="mb-4">Sign up to receive the latest deals and news</p>
-    <form class="d-flex justify-content-center flex-wrap gap-2 px-3 px-lg-0" action="#">
-      <input
-        type="email"
-        class="form-control w-auto"
-        placeholder="Enter your email"
-        required
-      />
-      <button type="submit" class="btn btn-primary">Join Now</button>
-    </form>
-  </section>
+    <!-- Plants Lover Section -->
+    <section class="plants-lover bg-light py-5 px-3 px-lg-5">
+        <!-- <h2 class="section-title mb-4 text-center">Plants Lover</h2> -->
 
-  <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-4">
-    <p class="mb-0">&copy; 2025 Responsive-Flowers. All rights reserved.</p>
-  </footer>
+        <div class="container my-5">
+            <div class="row align-items-center">
+                <!-- Left side (empty or image if needed) -->
+                <div class="col-md-6">
+                    <img class="parent-img" src="assets/flower-store.png" alt="" srcset="">
+                    <img class="child-img w-25" src="assets/trusted-badge.png" alt="">
+                </div>
 
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-  ></script>
+                <!-- Right side content -->
+                <div class="right col-md-6">
+                    <h1 class="mb-4">Flower & Plants <br> Lover</h1>
+                    <ul>
+                        <li class="mb-3">
+                            Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic
+                            roses to exotic blooms, we offer a wide variety of fresh.
+                        </li>
+                        <li class="mb-3">
+                            Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic
+                            roses to exotic blooms, we offer a wide variety of fresh.
+                        </li>
+                        <li class="mb-3">
+                            Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic
+                            roses to exotic blooms, we offer a wide variety of fresh.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    
+    <!-- Deals Section -->
+    <section class="plants py-5 px-3 px-lg-5">
+        <h2 class="section-title mb-4 text-center"> <span>Latest</span> Deals</h2>
+        <p class="plant-p">
+            Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic
+            blooms, we offer a wide variety of fresh.
+        </p>
+
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="row">
+                        <img src="assets/deal-bloom.png" alt="" srcset="">
+                        <!-- <h3>60% Off | Bloom Plant</h3> -->
+                    </div>
+                    <div class="row mt-4">
+                        <img src="assets/deal-ana.png" alt="" srcset="">
+                    </div>
+                </div>
+
+                <div class="col-md-8">
+                    <img src="assets/deal-zabo.png" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Join Section -->
+    <section class="join-section text-center py-5">
+        <h2 class="mb-3">Join Our Plant Community</h2>
+        <p class="mb-4">Sign up to receive the latest deals and news</p>
+        <form class="d-flex justify-content-center flex-wrap gap-2 px-3 px-lg-0" action="#">
+            <input type="email" class="form-control w-auto" placeholder="Enter your email" required />
+            <button type="submit" class="btn btn-primary">Join Now</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p class="mb-0">&copy; 2025 Responsive-Flowers. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
