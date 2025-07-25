@@ -352,16 +352,49 @@ body {
   /* Responsive adjustments */
   @media (max-width: 576) {
     .banner {
-      flex-direction: column;
+      /* flex-direction: column; */
     }
   
     .banner-image img {
       max-width: 100%;
     }
-  
+  .cart-link{
+    display: inline-block;
+    font-size: 24px;
+    color: #000;
+  }
     .plants-lover img {
       width: 120px;
       height: 120px;
+    }
+    .navbar {
+      width: 90% !important;
+      margin: auto;
+      box-shadow: 0;
+  }
+  .nav-item{
+    display: none !important;
+  }
+
+    
+    .logo img:hover{
+      transform: scale(1.05);
+      transition: all 0.3s ease-in-out;
+    }
+    .navbar-brand {
+      font-size: 1.5rem;
+      color: #000;
+    }
+    
+    .nav-link {
+      color: #8987A1;
+      font-weight: 500;
+    }
+    
+    .nav-link:hover,
+    .nav-link:focus {
+      color: #000;
+      text-decoration: none;
     }
   }
   
